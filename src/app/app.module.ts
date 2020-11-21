@@ -12,6 +12,8 @@ import { CancionesComponent } from './canciones/canciones.component';
 import { TopaplaylistComponent } from './topaplaylist/topaplaylist.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ArtistasComponent } from './artistas/artistas.component';
+import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ArtistasComponent } from './artistas/artistas.component';
     CancionesComponent,
     TopaplaylistComponent,
     UsuariosComponent,
-    ArtistasComponent
+    ArtistasComponent,
+    RegistrarseComponent,
+    IniciosesionComponent
   ],
   imports: [
     BrowserModule,
