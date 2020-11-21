@@ -9,6 +9,10 @@ import { CancionesComponent } from './canciones/canciones.component';
 import { TopaplaylistComponent } from './topaplaylist/topaplaylist.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ArtistasComponent } from './artistas/artistas.component';
+import { RegistrarseComponent } from './registrarse/registrarse.component';
+import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
+
+
 const routes: Routes = [
 {path:'', redirectTo:'Home',pathMatch:'full'},
 {path:'Home', component:HomeComponent},
@@ -19,6 +23,8 @@ const routes: Routes = [
 {path:'Topaplaylist', component:TopaplaylistComponent},
 {path:'Usuarios', component:UsuariosComponent},
 {path:'Artistas', component:ArtistasComponent},
+{path: 'Registrarse', component:RegistrarseComponent},
+{path: 'Iniciosesion', component: IniciosesionComponent},
 
 ];
 
