@@ -26,17 +26,16 @@
         <!-- hero play list -->
         <div class="hero-playlist">
             <div class="row">
-
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6" *ngFor="let play of playlist; let i=index">
                     <!-- play list -->
                     <div class="playlist-content">
                         <ul class="list-unstyled">
-                            <li class="playlist-number" *ngFor="let play of playlist; let i=index">
+                            <li class="playlist-number" >
                                 <!-- song information -->
                                 <div class="song-info">
                                     <!-- song title -->
                                     <h4>{{play.name}}</h4>
-                                    <p><strong>Album</strong>: {{play.album}} &nbsp;|&nbsp; <strong>Type</strong>:
+                                    <p><strong>Album</strong>: {{play.album}} &nbsp;|&nbsp; <br> <strong>Type</strong>:
                                         {{play.type}}
                                         &nbsp;|&nbsp; <strong>Singer</strong>: {{play.singer}}</p>
 
