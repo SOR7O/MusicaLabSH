@@ -358,8 +358,6 @@ export class AlbumesComponent implements OnInit {
     this.acumulador = 0;
     this.msgAlert = false;
     this.playlist.forEach(item => {
-
-
       if (!(item.album in this.playlist)) {
         this.playlist[item.album] = true;
         this.newArr.push(item.album)

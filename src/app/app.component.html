@@ -21,11 +21,11 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a routerLink="Home">Inicio</a></li>
-          <li><a routerLink="Albumes"> Álbumes</a></li>
-          <li><a routerLink="Canciones">Canciones</a></li>
-          <li><a routerLink ="Artistas">Artistas</a></li>
+        <ul class="navbar-nav mr-auto">
+          <li><a class="nav-link"  routerLink="Home">Inicio</a></li>
+          <li><a class="nav-link"  routerLink="Albumes"> Álbumes</a></li>
+          <li><a class="nav-link"  routerLink="Canciones">Canciones</a></li>
+          <li><a class="nav-link"  routerLink ="Artistas">Artistas</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" *ngIf="!state">
               Usuarios
@@ -36,10 +36,12 @@
             <div class="dropdown-divider"></div>
           </div>
           </li>
-          <li><a routerLink="Topaplaylist">Top Playlist</a></li>
-          <li><a routerLink="Contactanos">Contactanos</a></li>
-          <li><a routerLink="About"> Acerca de nosotros</a>
-          </li>
+          <li><a class="nav-link"  routerLink="MyPlaylist" class="nav-link" *ngIf="state" >Mi playlist</a></li>
+          <li><a class="nav-link"  routerLink="Topaplaylist">Top Playlist</a></li>
+          <li><a class="nav-link"  routerLink="Contactanos">Contactanos</a></li>
+          <li><a class="nav-link"  routerLink="About"> Acerca de nosotros</a> </li>
+          <li><a routerLink="Home" class="nav-link" (click)="logout()" *ngIf="state">Cerra session</a></li>
+         
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

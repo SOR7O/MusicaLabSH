@@ -11,7 +11,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ArtistasComponent } from './artistas/artistas.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
-
+import { PlaylistuserComponent} from './playlistuser/playlistuser.component';
+  import { from } from 'rxjs';
 
 const routes: Routes = [
 {path:'', redirectTo:'Home',pathMatch:'full'},
@@ -25,7 +26,7 @@ const routes: Routes = [
 {path:'Artistas', component:ArtistasComponent},
 {path: 'Registrarse', component:RegistrarseComponent},
 {path: 'Iniciosesion', component: IniciosesionComponent},
-
+{path: 'MyPlaylist', component:PlaylistuserComponent}
 ];
 
 @NgModule({

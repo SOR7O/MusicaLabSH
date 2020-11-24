@@ -14,6 +14,7 @@ import { ArtistasComponent } from './artistas/artistas.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PlaylistuserComponent } from './playlistuser/playlistuser.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UsuariosComponent,
     ArtistasComponent,
     RegistrarseComponent,
-    IniciosesionComponent
+    IniciosesionComponent,
+    PlaylistuserComponent
   ],
   imports: [
     BrowserModule,
