@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -14,6 +13,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ArtistasComponent } from './artistas/artistas.component';
 import { RegistrarseComponent } from './registrarse/registrarse.component';
 import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
