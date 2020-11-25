@@ -352,8 +352,7 @@ export class CancionesComponent implements OnInit {
       type: 'Rancheras',
       singer: 'La Trakalosa'
     },
-
-//parte de Carlos Ayetsas
+    //cias
     {
       name:'Alone',
       path:'assets/audio/Electronica/Alan Walker - Alone',
