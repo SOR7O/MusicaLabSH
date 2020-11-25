@@ -352,6 +352,345 @@ export class CancionesComponent implements OnInit {
       type: 'Rancheras',
       singer: 'La Trakalosa'
     },
+
+//parte de Carlos Ayetsas
+    {
+      name:'Alone',
+      path:'assets/audio/Electronica/Alan Walker - Alone',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'Fabed',
+      path:'assets/audio/Electronica/Alan Walker - Faded',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'He a Pirate',
+      path:'assets/audio/Electronica/Alan Walker - He_s a Pirate',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'Pandemic',
+      path:'assets/audio/Electronica/Alan Walker - PANDEMIC',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'The spectre',
+      path:'assets/audio/Electronica/Alan Walker - The Spectre',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'Emelie Hollow',
+      path:'assets/audio/Electronica/Alan Walker_ K-391 _ Emelie Hollow ',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'Tungevaag_ Mangoo',
+      path:'assets/audio/Electronica/Alan Walker_ K-391_ Tungevaag_ Mangoo',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Alan Walker'
+      },
+      {
+      name:'For A Better Day',
+      path:'assets/audio/Electronica/Avicii - For A Better Day',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'Heaven',
+      path:'assets/audio/Electronica/Avicii - Heaven',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'Hey Brother',
+      path:'assets/audio/Electronica/Avicii - Hey Brother',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'Levels',
+      path:'assets/audio/Electronica/Avicii - Levels',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'The Nights',
+      path:'assets/audio/Electronica/Avicii - The Nights',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'Waiting For Love',
+      path:'assets/audio/Electronica/Avicii - Waiting For Love',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'Wake Me Up',
+      path:'assets/audio/Electronica/Avicii - Wake Me Up',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Avici'
+      },
+      {
+      name:'Hey Mama',
+      path:'assets/audio/Electronica/David Guetta - Hey Mama',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'Play Hard ft. Ne-Yo',
+      path:'assets/audio/Electronica/David Guetta - Play Hard ft. Ne-Yo',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'Shot Me Down',
+      path:'assets/audio/Electronica/David Guetta - Shot Me Down',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'Titanium ft. Sia',
+      path:'assets/audio/Electronica/David Guetta - Titanium ft. Sia',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'MORTEN - Save My Life feat',
+      path:'assets/audio/Electronica/David Guetta _ MORTEN - Save My Life feat',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'Showtek - Bad ft.Vassy',
+      path:'assets/audio/Electronica/David Guetta _ Showtek - Bad ft.Vassy',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'Sia - Let_s Love',
+      path:'assets/audio/Electronica/David Guetta _ Sia - Let_s Love',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'David Guetta'
+      },
+      {
+      name:'Come Go',
+      path:'assets/audio/Electronica/Juice WRLD _ Marshmello - Come _ Go',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Juice WRLD Marshmello'
+      },
+      {
+      name:'Polo G',
+      path:'assets/audio/Electronica/Juice WRLD with Marshmello ft. Polo G',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Juice WRLD Marshmello'
+      },
+      {
+      name:'Civilization',
+      path:'assets/audio/Electronica/Justice - Civilization',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Justice'
+      },
+      {
+      name:'D.A.N.C.E',
+      path:'assets/audio/Electronica/Justice - D.A.N.C.E.',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Justice'
+      },
+      {
+      name:'Justice',
+      path:'assets/audio/Electronica/Stailok - Justice',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Justice'
+      },
+      {
+      name:'Genesis',
+      path:'assets/audio/Electronica/Justice - Genesis',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Justice'
+      },
+      {
+      name:'Heavy Metal',
+      path:'assets/audio/Electronica/Justice - Heavy Metal',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Justice'
+      },
+      {
+      name:'Ok Not to be',
+      path:'assets/audio/Electronica/Marshmello _ Demi Lovato',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Marshmello _ Demi Lovato'
+      },
+      {
+      name:'Halsey - Be Kind',
+      path:'assets/audio/Electronica/Marshmello _ Halsey - Be Kind',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Marshmello'
+      },
+      {
+      name:'Dugg - Baggin',
+      path:'assets/audio/Electronica/Marshmello x 42 Dugg - Baggin',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Marshmello'
+      },
+      {
+      name:'Imanbek',
+      path:'assets/audio/Electronica/Marshmello x Imanbek',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Marshmello'
+      },
+      {
+      name:'Animals',
+      path:'assets/audio/Electronica/Martin Garrix - Animals',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Martin Garrix'
+      },
+      {
+      name:'Dean Lewis Used to love',
+      path:'assets/audio/Electronica/Martin Garrix _ Dean Lewis Used to love',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Martin Garrix'
+      },
+      {
+      name:'Higher Ground',
+      path:'assets/audio/Electronica/Martin Garrix feat. John Martin',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Martin Garrix feat. John Martin'
+      },
+      {
+      name:'Dutch waters',
+      path:'assets/audio/Electronica/Martin Garrix Tribute to Avicii',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Martin Garrix'
+      },
+      {
+      name:'Hold On',
+      path:'assets/audio/Electronica/Martin Garrix_ Matisse _ Sadko feat. Michel Zitron',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Martin Garrix_ Matisse _ Sadko feat. Michel Zitron'
+      },
+      {
+      name:'Fire',
+      path:'assets/audio/Electronica/Ytram _ Elderbrook - Fire',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Ytram'
+      },
+      {
+      name:'Jon Bellion',
+      path:'assets/audio/Electronica/Zedd - Beautiful Now ft. Jon Bellion',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Foxes',
+      path:'assets/audio/Electronica/Zedd - Clarity ft. Foxes',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Find You ft',
+      path:'assets/audio/Electronica/Zedd - Find You ft.',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'I Want You To Know',
+      path:'assets/audio/Electronica/Zedd - I Want You To Know ft. Selena Gomez',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Stay The Night',
+      path:'assets/audio/Electronica/Zedd - Stay The Night ft. Hayley Williams',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Funny',
+      path:'assets/audio/Electronica/Zedd _ Jasmine Thompson - Funny',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Stay',
+      path:'assets/audio/Electronica/Zedd_ Alessia Cara - Stay',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Inside Out',
+      path:'assets/audio/Electronica/Zedd_ Griff - Inside Out',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'Get Low',
+      path:'assets/audio/Electronica/Zedd_ Liam Payne - Get Low',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+      {
+      name:'The Middle8',
+      path:'assets/audio/Electronica/Zedd_ Maren Morris_ Grey - The Middle',
+      album: 'xy',
+      type: 'Electronica',
+      singer: 'Zedd'
+      },
+    
   ]
   cout: number;
   acumulador: number;
