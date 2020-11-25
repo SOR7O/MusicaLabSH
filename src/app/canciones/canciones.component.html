@@ -1,0 +1,60 @@
+<!-- <div class="container">
+    <div *ngFor="let play of playlist; let i=index">
+        <div class="card">
+             <h1 id="name">{{play.name}}</h1>
+            <label>{{play.name}}</label>
+            <label for="">{{i}}</label>
+            <input type="hidden" name="" id="name" value="{{play.path}}" readonly="readonly">
+            <button (click)="reproducir(i)"><i class="fa fa-play"></i></button>
+            <button (click)="detener()"><i class="fa fa-pause"></i></button>
+            <button (click)="agregar(i)">Agregar</button>
+        </div>
+    </div>
+</div>
+ -->
+<div id="latestalbum" class="hero pad">
+    <div class="container">
+        <!-- hero content -->
+        <div class="hero-content ">
+            <!-- heading -->
+            <h2>Canciones</h2>
+            <hr>
+            <!-- paragraph -->
+            <p>We sing the best <strong class="theme-color">Songs</strong> and now we control the world best <strong
+                    class="theme-color">Music</strong>.</p>
+        </div>
+        <!-- hero play list -->
+        <div class="hero-playlist">
+            <div class="row">
+                <div class="col-md-6 col-sm-6" *ngFor="let play of playlist; let i=index">
+                    <!-- play list -->
+                    <div class="playlist-content">
+                        <ul class="list-unstyled">
+                            <li class="playlist-number" >
+                                <!-- song information -->
+                                <div class="song-info">
+                                    <!-- song title -->
+                                    <h4>{{play.name}}</h4>
+                                    <p><strong>Album</strong>: {{play.album}} &nbsp;|&nbsp; <br> <strong>Type</strong>:
+                                        {{play.type}}
+                                        &nbsp;|&nbsp; <strong>Singer</strong>: {{play.singer}}</p>
+
+                                </div>
+                                <!-- music icon -->
+                                <div class="music-icon">
+                                    <a class="reproducir" (click)="reproducir(i)"><i class="fa fa-play"></i></a>
+                                    <a class="detener" (click)="detener(i)"><i class="fa fa-pause"></i></a>
+                                    <a class="agregar" (click)="agregar(i)"><i class="fas fa-plus"></i></a>
+                                    <a class="like" (click)="like(i)"><i class="fas fa-thumbs-up"></i></a>
+                                    
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ hero end -->

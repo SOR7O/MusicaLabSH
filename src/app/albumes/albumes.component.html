@@ -1,0 +1,55 @@
+<!-- featured abbum -->
+<div class="container text-center" *ngIf="ver">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let play of newArr; let i=index">
+
+
+            <div class="featured-item ">
+                <!-- image container -->
+                <div class="figure">
+                    <!-- image -->
+                    <img class="img-responsive" src="assets/img/featured/5.jpg" alt="" />
+                    <!-- paragraph -->
+                    <p>There are many variations of passages available, but the majority have suffered Lorem
+                        alteration in some form, by injected look even slightly believable.</p>
+                </div>
+                <!-- featured information -->
+                <div class="featured-item-info">
+                    <!-- featured title -->
+                    <h1 class="text-center">{{play}}</h1>
+                    <!-- horizontal line -->
+                    <hr />
+                    <!-- some responce from social medial or web likes -->
+                    <p>1024+ <span class="label label-theme">Like</span> &nbsp;&nbsp; 825+ <span
+                            class="label label-theme">Love</span></p>
+                </div>
+            </div>
+            <button class="btn btn-danger mb-4 text-dark" (click)="viewAlbum(i)">Ver album</button>
+
+        </div>
+    </div>
+</div>
+
+<div class="container text-center " *ngIf="!ver">
+    <div class="row">
+        <!-- play list -->
+        <div class="playlist-content">
+                <div class="col-md-4 playlist-number mb-3" *ngFor="let name of newArr2;let y=index">
+
+                    <!-- song information -->
+                    <div class="song-info">
+                        <!-- song title -->
+                        <h4>{{name.name}}</h4>
+                    </div>
+                    <!-- music icon -->
+                    <div class="music-icon">
+                        <a class="reproducir" (click)="reproducir(y)"><i class="fa fa-play"></i></a>
+                        <a class="detener" (click)="detener(y)"><i class="fa fa-pause"></i></a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+   
+    </div>
+    <button class=" btn btn-danger mb-3 text-dark" (click)="hiddenAlbum()" >Ver menos</button>
+</div>

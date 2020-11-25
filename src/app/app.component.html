@@ -1,0 +1,69 @@
+<!-- header area -->
+<header>
+  <!-- secondary menu -->
+
+  <!-- primary menu -->  <nav class="  navbar navbar-expand-lg navbar-fixed-top navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class=" navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- logo area -->
+        <a class="navbar-brand" href="#home">
+          <!-- logo image -->
+          <img class="img-responsive" src="assets/img/logo/logo.png" alt="" />
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar-nav mr-auto">
+          <li><a class="nav-link"  routerLink="Home">Inicio</a></li>
+          <li><a class="nav-link"  routerLink="Albumes"> Álbumes</a></li>
+          <li><a class="nav-link"  routerLink="Canciones">Canciones</a></li>
+          <li><a class="nav-link"  routerLink ="Artistas">Artistas</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" *ngIf="!state">
+              Usuarios
+            </a>
+          <div class="dropdown-menu text-color " aria-labelledby="navbarDropdown">
+            <li><a class="nav-item " routerLink="Registrarse">Registrarse</a></li>
+            <li><a class="nav-item" routerLink="Iniciosesion">Iniciar sesion</a></li>
+            <div class="dropdown-divider"></div>
+          </div>
+          </li>
+          <li><a class="nav-link"  routerLink="MyPlaylist" class="nav-link" *ngIf="state" >Mi playlist</a></li>
+          <li><a class="nav-link"  routerLink="Topaplaylist">Top Playlist</a></li>
+          <li><a class="nav-link"  routerLink="Contactanos">Contactanos</a></li>
+          <li><a class="nav-link"  routerLink="About"> Acerca de nosotros</a> </li>
+          <li><a routerLink="Home" class="nav-link" (click)="logout()" *ngIf="state">Cerra session</a></li>
+         
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
+<!--/ header end -->
+
+<router-outlet></router-outlet>
+
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <!-- social media links -->
+    <div class="social">
+      <a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
+      <a class="h-google" href="#"><i class="fa fa-google-plus"></i></a>
+      <a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+      <a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    <!-- copy right -->
+    <p class="copy-right">&copy; copyright 2018, All rights are reserved.</p>
+  </div>
+</footer>
+<!-- footer end -->

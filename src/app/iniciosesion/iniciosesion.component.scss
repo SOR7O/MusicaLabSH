@@ -1,0 +1,37 @@
+.mgt{
+    margin-top: 5em;
+}
+.dr{
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+a, label{
+    font-size: 2em;
+    text-decoration: none;
+    color: #FF8000;
+}
+a, h1,input{
+    color: #FF8000;
+    font-weight: bold;
+    ;
+}
+a:hover{
+    color: #FF8000;
+}
+button{
+    background-color: #424242;
+    color: #FF8000;
+    font-size: 2.2em;
+    border: 2px double #FF8000;
+    border-radius: 6px;
+    
+    }
+    button:hover{
+        background-color: #424242;
+        color: #FF8000;
+        border-color: #FF8000;
+    
+    }
+    
