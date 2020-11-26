@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { InicioComponent } from './inicio/inicio.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumesComponent } from './albumes/albumes.component';
@@ -16,6 +17,12 @@ import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PlaylistuserComponent } from './playlistuser/playlistuser.component';
 
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabase, AngularFireDatabaseModule} from '@angular/fire/database';
+import {environment} from '../environments/environment'
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +32,7 @@ import { PlaylistuserComponent } from './playlistuser/playlistuser.component';
     ContactanosComponent,
     AboutComponent,
     CancionesComponent,
-    TopaplaylistComponent,
+    TopaplaylistComponent, 
     UsuariosComponent,
     ArtistasComponent,
     RegistrarseComponent,
@@ -35,7 +42,11 @@ import { PlaylistuserComponent } from './playlistuser/playlistuser.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
