@@ -1,8 +1,19 @@
-<div class="alert alert-danger alert-dismissible show" role="alert" *ngIf="msgAlert">
-      <strong>{{msg}}</strong>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span></button>
+<div class="container" *ngIf="!success">
+    <div class="alert alert-danger mx-auto show" role="alert" *ngIf="msgAlert" style="height:40px;">
+        <strong>{{msg}}</strong>
+        <button type="button" class="close btn-sm aling-self-center" data-dismiss="alert" aria-label="Close" (click)="cerrar()">
+            <span aria-hidden="true">&times;</span></button>
+    </div>
 </div>
+<div class="container" *ngIf="success">
+    <div class=" alert alert-success  mx-auto show" role="alert" *ngIf="msgAlert" style="height:40px;">
+        <strong>{{msg}}</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="cerrar()">
+            <span aria-hidden="true">&times;</span></button>
+    </div>
+</div>
+
+<!-- 
 <div class="container mgt mb-5">
     <div class="card mx-auto dr" style="width: 35em;">
         <div class="card-header text-center">
@@ -27,6 +38,41 @@
                     <label class="mr-2">Ya estas registrado?</label><a routerLink="../Iniciosesion">Iniciar sesion</a>
                 </div>
             </form>
+        </div>
+    </div>
+</div> -->
+
+<div class="container mgt mb-5">
+    <div class="card mx-auto dr" style="width: 35em;">
+        <div class="card-header text-center">
+            <h1 class="card-title">Formulario de registro</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input class="form-control" type="text" id="name" [(ngModel)]="name" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" id="email" [(ngModel)]="email"
+                    placeholder="Ingrese su correo electronico">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" id="password" [(ngModel)]="password"
+                    placeholder="Ingrese su contraseña">
+            </div>
+            <div class="form-group text-center">
+                <button class=" mb-3 mt-2" (click)="agregarUsuario()">Registrarse</button>
+                <br>
+                <label class="mr-2">Ya estas registrado?</label><a routerLink="../Iniciosesion">Iniciar sesion</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let item of collection.data">
+            <h1>{{item.name}}</h1>
         </div>
     </div>
 </div>
