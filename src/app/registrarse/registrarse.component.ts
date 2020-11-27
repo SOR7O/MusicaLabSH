@@ -51,8 +51,7 @@ export class RegistrarseComponent implements OnInit {
     });
     this.afath.user.subscribe(user=>{
       if(user){
-        console.log("hola");
-        
+        this.msg= "welcome"
       }
     })
     this.config = {
@@ -68,8 +67,7 @@ export class RegistrarseComponent implements OnInit {
 
   agregarUsuario() {
 
-    
-
+    var uc=null;
     let findUser = this.collection.data.filter(x => x.email === this.email);
     console.log(findUser.length);
     let em = (<HTMLInputElement>document.getElementById("email")).value;
@@ -96,7 +94,11 @@ export class RegistrarseComponent implements OnInit {
         User["email"] = this.email;
         User["password"] = bcrypt.hashSync(this.password,10);
         User["cod"] = cod;
-        this.afath.createUserWithEmailAndPassword(this.email, this.password).then(()=>{
+        this.afath.createUserWithEmailAndPassword(this.email, this.password).then((credential)=>{
+          
+          credential.user.updateProfile({
+            displayName: this.name
+          });
           this.firebaseServiceService.addUser(User).then(() => {
             this.success = true;
             this.name = "";
@@ -105,8 +107,10 @@ export class RegistrarseComponent implements OnInit {
             this.msgAlert = true;
             this.msg = "Usuario registrado correctamente"
           }).catch(error => {
-            console.log(error);
+            this.msgAlert=true;
+            this.msg= error.message
           });
+          let x=this.afath.currentUser;
           this.router.navigate(['/Iniciosesion']);
         }).catch((response=>{
           this.msgAlert=true;
