@@ -1,17 +1,14 @@
-<!-- <div class="container">
-    <div *ngFor="let play of aaa; let i=index">
-        <div class="card">
-            <label>{{play.name}}</label>
-            <label for="">{{i}}</label>
-            <input type="hidden" name="" id="name" value="{{play.path}}" readonly="readonly">
-            <button (click)="reproducir(i)"><i class="fa fa-play"></i></button>
-            <button (click)="detener()"><i class="fa fa-pause"></i></button>
-            <button (click)="agregar(i)">Agregar</button>
-        </div>
+<!-- Mensaje a mostrar si hay algun errror -->
+<div class="container">
+    <div class="alert alert-success mx-auto show" role="alert" *ngIf="msgAlert" style="height:40px;">
+        <strong>{{msg}}</strong>
+        <button type="button" class="close btn-sm aling-self-center" data-dismiss="alert" aria-label="Close" (click)="cerrar()">
+            <span aria-hidden="true">&times;</span></button>
     </div>
-</div> -->
+</div>
+
 <h1 class="title text-center" *ngIf="state">Tu playlist esta vacia!</h1>
-<div id="latestalbum" class="hero pad">
+<div id="latestalbum" class="hero">
     <div class="container">
         <!-- hero content -->
         <div class="hero-content" *ngIf="!state">
@@ -30,17 +27,25 @@
                     <!-- play list -->
                     <div class="playlist-content">
                         <ul class="list-unstyled">
-                            <li class="playlist-number" *ngFor="let play of aaa; let i=index">
+                            <!-- ciclo for para recorrer la coleccion de datos 
+                                 que provienen de la playlist    
+                            -->
+                            <li class="playlist-number" *ngFor="let play of collection.data; let i=index"> 
                                 <!-- song information -->
                                 <div class="song-info">
                                     <!-- song title -->
-                                    <h4>{{play.name}}</h4>
+                                    <!-- recorremos el ciclo y mostramos los campos solicitados-->
+                                    <h4>{{play.name}}</h4> 
                                     <p><strong>Album</strong>: {{play.album}} &nbsp;|&nbsp; <strong>Type</strong>:
                                         {{play.type}}
                                         &nbsp;|&nbsp; <strong>Singer</strong>: {{play.singer}}</p>
+                                        {{play.codSong}}
                                 </div>
                                 <!-- music icon -->
                                 <div class="music-icon">
+                                    <!-- Botones media el ciclo con la condicion de recorrer con la variable i 
+                                        elegimos cual agregar, reproducir y detener
+                                    -->
                                     <a class="reproducir" (click)="reproducir(i)"><i class="fa fa-play"></i></a>
                                     <a class="detener" (click)="detener()"><i class="fa fa-pause"></i></a>
                                     <a class="agregar" (click)="remover(i)"><i class="fas fa-minus"></i></a>
