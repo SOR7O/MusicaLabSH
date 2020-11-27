@@ -12,7 +12,15 @@
     </div>
 </div>
  -->
-<div id="latestalbum" class="hero pad">
+ <div class="container">
+    <div class="alert alert-success mx-auto show" role="alert" *ngIf="msgAlert" style="height:40px;">
+        <strong>{{msg}}</strong>
+        <button type="button" class="close btn-sm aling-self-center" data-dismiss="alert" aria-label="Close" (click)="cerrar()">
+            <span aria-hidden="true">&times;</span></button>
+    </div>
+</div>
+<div class="container">    
+<div id="latestalbum" class="hero ">
     <div class="container">
         <!-- hero content -->
         <div class="hero-content ">
@@ -56,5 +64,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <!--/ hero end -->
