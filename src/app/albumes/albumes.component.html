@@ -8,7 +8,7 @@
                 <!-- image container -->
                 <div class="figure">
                     <!-- image -->
-                    <img class="img-responsive" src="assets/img/featured/5.jpg" alt="" />
+                    <img class="img-responsive" src={{play.image}} alt="" />
                     <!-- paragraph -->
                     <p>There are many variations of passages available, but the majority have suffered Lorem
                         alteration in some form, by injected look even slightly believable.</p>
@@ -16,7 +16,7 @@
                 <!-- featured information -->
                 <div class="featured-item-info">
                     <!-- featured title -->
-                    <h1 class="text-center">{{play}}</h1>
+                    <h1 class="text-center">{{play.name}}</h1>
                     <!-- horizontal line -->
                     <hr />
                     <!-- some responce from social medial or web likes -->
@@ -34,22 +34,32 @@
     <div class="row">
         <!-- play list -->
         <div class="playlist-content">
-                <div class="col-md-4 playlist-number mb-3" *ngFor="let name of newArr2;let y=index">
-
-                    <!-- song information -->
-                    <div class="song-info">
-                        <!-- song title -->
-                        <h4>{{name.name}}</h4>
-                    </div>
-                    <!-- music icon -->
-                    <div class="music-icon">
-                        <a class="reproducir" (click)="reproducir(y)"><i class="fa fa-play"></i></a>
-                        <a class="detener" (click)="detener(y)"><i class="fa fa-pause"></i></a>
-                    </div>
+            <div class="col-md-6 col-sm-6 mb-3" *ngFor="let play of newArr2;let y=index">
+                <div class="playlist-content">
+                    <ul class="list-unstyled">
+                        <li class="playlist-number">
+                            <!-- song information -->
+                            <div class="song-info">
+                                <!-- song title -->
+                                <h4><strong>Singer: </strong>{{play.singer}}</h4>
+                                <h5><strong>Nombre cancion: </strong>{{play.name}}</h5>
+                                <p><strong>Album</strong>: {{play.album}} &nbsp;|&nbsp;  <strong>Type</strong>:
+                                    {{play.type}}
+                                    &nbsp;|&nbsp;</p>
+                            </div>
+                            <!-- music icon -->
+                            <div class="music-icon">
+                                <a class="reproducir" (click)="reproducir(y)"><i class="fa fa-play"></i></a>
+                                <a class="detener" (click)="detener(y)"><i class="fa fa-pause"></i></a>
+                                <a class="agregar" (click)="agregar(y)"><i class="fas fa-plus"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="clearfix"></div>
+
             </div>
-   
+
+        </div>
+        <button class=" btn btn-danger mb-3 text-dark" (click)="hiddenAlbum()">Ver menos</button>
     </div>
-    <button class=" btn btn-danger mb-3 text-dark" (click)="hiddenAlbum()" >Ver menos</button>
-</div>
