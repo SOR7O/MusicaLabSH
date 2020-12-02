@@ -471,19 +471,20 @@ export class AlbumesComponent implements OnInit {
   }
 
   viewAlbum(i) {
+    console.log("=>", this.newArr[i].name);
+    
     this.state = false;
     this.ver = false;
-    this.playlist.forEach(item => {
-      if (item.album === this.newArr[i]) {
-        this.newArr2.push({"name":item.name,"path":item.path, 'album': item.album,
-        'type': item.type,'singer':item.singer});
-        this.newArray3.push(item.path);
+
+    this.newArr2= this.playlist.map((e:any)=>{
+      return{
+        name: e.name,
+        path: e.path,
+        album: e.album,
+        type: e.type,
+        singer:e.singer
       }
-    });
-    console.log(this.newArr2);
-    
-
-
+    }).filter(x=>x.album ==this.newArr[i].name)
   }
   hiddenAlbum() {
     this.ver= true;
@@ -512,6 +513,8 @@ export class AlbumesComponent implements OnInit {
 
   }
   reproducir(y) {
+    console.log("reprod=>", this.newArr2[y]);
+    
     if (this.cout === 0) {
       this.numberOfSong = y;
       console.log(this.numberOfSong);
