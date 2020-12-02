@@ -470,7 +470,16 @@ export class ArtistasComponent implements OnInit {
   canciones(i) {
     this.state = false;
     this.ver = false
-    this.playlist.forEach(item => {
+    this.newArray2=this.playlist.map((e: any)=>{
+      return{
+        name: e.name,
+        path: e.path,
+        album: e.album,
+        type: e.type,
+        singer:e.singer
+      }
+    }).filter(x=>x.singer===this.newArray[i].singer)
+    /* this.playlist.forEach(item => {
       if (item.singer === this.newArray[i]) {
         this.newArray2.push({
           "singer": item.singer, "path": item.path, "nameSong": item.name, 'album': item.album,
@@ -478,7 +487,7 @@ export class ArtistasComponent implements OnInit {
         });
       }
     });
-    console.log(this.newArray2);
+    console.log(this.newArray2); */
 
   }
   hiddenCanciones() {
