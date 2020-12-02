@@ -35,10 +35,8 @@ export class FirebaseServiceService {
   getSongsPlaylist(){
     /* let x= (await this.afAuth.authState.pipe(first()).toPromise()).uid;
     console.log(x); */
-    
 
     /* return this.firestore.collection('playlist').doc(x).snapshotChanges(); */
-    
     return this.firestore.collection('playlist').snapshotChanges();
   }
 

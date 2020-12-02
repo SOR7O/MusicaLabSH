@@ -1,139 +1,78 @@
-<!-- Hero block area -->
-<div id="latestalbum" class="hero pad">
-    <div class="container">
-        <!-- hero content -->
-        <div class="hero-content ">
-            <!-- heading -->
-            <h2>TopPlaylist</h2>
-            <hr>
-            <!-- paragraph -->
-            <p>We sing the best <strong class="theme-color">Songs</strong> and now we control the world best <strong class="theme-color">Music</strong>.</p>
-        </div>
-        <!-- hero play list -->
-        <div class="hero-playlist">
-            <div class="row">
-               
-                <div class="col-md-6 col-sm-6">
-                    <!-- play list -->
-                    <div class="playlist-content">
-                        <ul class="list-unstyled">
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track One</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
+<div class="container">
+    <div class="alert alert-success mx-auto show" role="alert" *ngIf="msgAlert" style="height:40px;">
+        <strong>{{msg}}</strong>
+        <button type="button" class="close btn-sm aling-self-center" data-dismiss="alert" aria-label="Close"
+            (click)="cerrar()">
+            <span aria-hidden="true">&times;</span></button>
+    </div>
+</div>
+<div class="container">
+    <!-- hero content -->
+    <div class="hero-content text-center">
+        <!-- heading -->
+        <h2>Playlist</h2>
+        <hr>
+        <!-- paragraph -->
+        <p>We sing the best <strong class="theme-color">Songs</strong> and now we control the world best <strong
+                class="theme-color">Music</strong>.</p>
+    </div>
+    <!-- hero play list -->
+    <div class="hero-playlist">
+        <!-- play list -->
+        <div class="playlist-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" *ngFor="let tplay of topPlaylist;let i=index">
+                        <ul class="lista" *ngIf="state">
+                            <li>
+                                <div class="card mb-2 mx-auto">
+                                    <div class="card-header">
+                                        <h3>Playlist del usuario: {{tplay.name}}<</h3>
+                                        <a class="btn btn-success" type="button" (click)="ver(i)">Ver playlist</a>
+                                    </div>
                                 </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Two</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Three</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Four</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Five</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Six</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Seven</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li class="playlist-number">
-                                <!-- song information -->
-                                <div class="song-info">
-                                    <!-- song title -->
-                                    <h4>Melodi Song Track Eight</h4>
-                                    <p><strong>Album</strong>: Title &nbsp;|&nbsp; <strong>Type</strong>: Rock &nbsp;|&nbsp; <strong>Singer</strong>: Dawn</p>
-                                </div>
-                                <!-- music icon -->
-                                <div class="music-icon">
-                                    <a href="#"><i class="fa fa-play"></i></a>
-                                    <a href="#"><i class="fa fa-pause"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
                             </li>
                         </ul>
                     </div>
+                    <div class="container" *ngIf="!state">
+                        <div class="row" >
+                            <div class="col-md-6 col-sm-6" *ngFor="let play of collection.data; let i=index">
+                                <ul class="list-unstyled" >
+                                    <!-- ciclo for para recorrer la coleccion de datos 
+                                 que provienen de la playlist    -->
+                                    <li class="playlist-number" >
+                                        <!-- song information -->
+                                        <div class="song-info">
+                                            <!-- song title -->
+                                            <!-- recorremos el ciclo y mostramos los campos solicitados-->
+                                            <h4>{{play.name}}</h4>
+                                            <p><strong>Album</strong>: {{play.album}} &nbsp;|&nbsp; <strong>Type</strong>:
+                                                {{play.type}}
+                                                &nbsp;|&nbsp; <strong>Singer</strong>: {{play.singer}}</p>
+                                        </div>
+                                        <!-- music icon -->
+                                        <div class="music-icon">
+                                            <!-- Botones media el ciclo con la condicion de recorrer con la variable i 
+                                        elegimos cual agregar, reproducir y detener
+                                    -->
+                                            <a type="button" class="reproducir" (click)="reproducir(i)"><i
+                                                    class="fa fa-play"></i></a>
+                                            <a type="button" class="detener" (click)="detener(i)"><i
+                                                    class="fa fa-pause"></i></a>
+                                            <a type="button" class="agregar" (click)="agregar(i)"><i
+                                                    class="fas fa-plus"></i></a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <a type="button" class="btn btn-warning mt-5 mb-4" (click)="verMenos()">Ver menos</a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-</div>
-<!--/ hero end -->

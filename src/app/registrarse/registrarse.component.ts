@@ -6,8 +6,6 @@ import {AngularFireAuth} from '@angular/fire/auth';
 import { userService } from './services/userservices';
 import { User } from '../models/user';
 import { Observable, of } from 'rxjs';
-import * as bcrypt from 'bcryptjs';
-import * as CryptoJS from 'crypto-js'
 
 @Component({
   selector: 'app-registrarse',
@@ -92,7 +90,6 @@ export class RegistrarseComponent implements OnInit {
         var cod = findUser.length + 1;
         User["name"] = this.name;
         User["email"] = this.email;
-        User["password"] = bcrypt.hashSync(this.password,10);
         User["cod"] = cod;
         this.afath.createUserWithEmailAndPassword(this.email, this.password).then((credential)=>{
           
